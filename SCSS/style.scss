@@ -16,6 +16,9 @@ header {
   }
   ul {
     padding-top: 20px;
+    .fa-times{
+      display: none;
+    }
     li {
       padding-left: 20px;
       display: inline;
@@ -334,16 +337,36 @@ footer {
     body{
      header{
        padding-top: 20px;
+       margin-left: 10px;
        h1{
          font-size: 20px;
          
        }
        ul{
+          
          display: none;
+         flex-direction: column;
+         text-align: center;
+         padding-bottom: 60px;
+         
+width: 100%;
+         position: absolute;
+         
+         background-color: rgb(255, 255, 255);
+         .fa-times{
+           cursor: pointer;
+           display: block;
+           padding-left: 190px;
+           padding-bottom: 40px;
+         }
+         li{
+           padding: 0px;
+         }
        }
        .fas{
          display: block;
          padding-top: 8px;
+        cursor: pointer;
        }
      }
 
@@ -457,8 +480,8 @@ footer {
        
        .avatar{
          
-         width: 50px;
-         width: 100%;
+        //  width: 50px;
+        //  width: 100%;
 
          
        }
@@ -478,6 +501,12 @@ footer {
      .newsletter{
        margin-left: 0px;
        margin-right: 0px;
+
+        form{
+          input{
+            margin-left: 10%;
+          }
+        }
      }
     }
 }
